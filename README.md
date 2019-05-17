@@ -1,7 +1,7 @@
 # Get Form Data Chrome Extension
-Trying out the use of `chrome.webRequest` to get restaurant information from the ubereats site. I went through all the post and get requests from the individual restaurant pages to see if there was any information I could use. I found a form data from a post request to facebook, the form data contained all the information I needed including the latitude and longitude of the restaurant. The problem came in that this post is only done once and moving from page to page (restaurant to restaurant) didn't reveal any more data, strangely only the very first restaurant page you visit. So I made it so when the popup icon is clicked a page refresh occurs therefore forcing the form data to be sent again but this time with the current restaurant page data.
+Trying out the use of `chrome.webRequest` to get restaurant information from the ubereats site. I went through all the post and get requests from the individual restaurant pages to see if there was any information I could use. I found form data from a post request to facebook, the form data contained all the information I needed including the latitude and longitude of the restaurant. The problem came in that this post is only done once and moving from page to page (restaurant to restaurant) didn't reveal any more data, strangely only the very first restaurant page you visit posts the form data. So I made it so when the popup icon is clicked a page refresh occurs therefore forcing the form data to be sent again but this time with the current restaurant page data.
 
-Currently it only display the data found in a popup
+Currently it only display the data found in a popup.
 
 I aim to incorporate what I learned here to use in my food hygiene rating chrome extension.
 
