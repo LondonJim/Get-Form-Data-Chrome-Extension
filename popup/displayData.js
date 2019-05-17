@@ -1,6 +1,8 @@
 chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
 	if (!!message.name) {
     console.log(message)
+    restaurantText = `${message.name} ${message.address} ${message.postcode} ${message.latitude} ${message.longitude}`
+    document.getElementById("restaurant-details").innerText = restaurantText
   }
 })
 
